@@ -1,0 +1,83 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.mySlides {
+  /* display: none; */
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  /* 부모 tag중 relative가 있다면, 그것을 기준점으로 움직이겠다 */
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* on hover, add a black background color with a little bit see-through
+ */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fade 2s;
+}
